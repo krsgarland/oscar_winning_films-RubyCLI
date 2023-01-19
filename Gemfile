@@ -12,3 +12,6 @@ gem "standard", "~> 1.3"
 
 gem 'nokogiri'
 gem 'open-uri'
+
+gem 'bcrypt'
+gem 'pry'
