@@ -1,9 +1,25 @@
 class CLI
     def run 
-        puts "Greetings!"
+        User.seed
+        signup_or_login
         menu
     end
 
+    def signup_or_login
+        user_input = ""
+        while user_input !+ "exit"
+            puts "Please login or sign up"
+            user_input = gets.chomp
+            if user_input == "login"
+                login
+                break;
+            elseif user_input == "sign up"
+            signup
+            break;
+            end
+        end
+    end
+    
     def menu
         user_input = ""
 
