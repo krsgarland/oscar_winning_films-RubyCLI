@@ -23,7 +23,7 @@ class CLI
 
     def signup_or_login
         user_input = ""
-        while user_input !+ "exit"
+        while user_input != "exit"
             puts "Please login or sign up"
             user_input = gets.chomp
             if user_input == "login"

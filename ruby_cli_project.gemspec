@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/oscar_winning_films_cli/version"
+require_relative "lib/ruby_cli_project/version"
 
 Gem::Specification.new do |spec|
   spec.name = ""
