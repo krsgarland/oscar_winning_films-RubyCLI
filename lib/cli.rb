@@ -19,6 +19,21 @@ class CLI
             end
         end
     end
+
+    def login
+        authenticate = false
+        while authenticate == false
+            puts "Please enter your username:"
+            username = gets.chomp
+            puts "Please enter your password:"
+            password = gets.chomp
+
+            if User.authenticate_user(username, password)
+                authenticate = true
+                puts "Login successful!"
+            end
+        end
+    end
     
     def menu
         user_input = ""
